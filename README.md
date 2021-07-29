@@ -1,7 +1,7 @@
 # Essential Todos
-A demo project for the YouTube video: Clean Architecture in React.
+A demo prototype for Listic: Clean Architecture in React.
 
-Link to the video: https://youtu.be/qOH2X5hciiA
+Link to the video: https://github.com/cooper09/listic-proto
 
 ## Built with Clean Architecture
 - Application - Redux
@@ -10,5 +10,5 @@ Link to the video: https://youtu.be/qOH2X5hciiA
 
 ## Other Features
 - All business logic resides in Redux Middleware
-- Fetches dummy todo data from `https://jsonplaceholder.typicode.com`
+- Fetches data from multiple sources
 - Boostraped with `create-react-app`
