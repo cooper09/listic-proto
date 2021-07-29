@@ -1,4 +1,4 @@
-# Essential Todos
+# Listic-Proto
 A demo prototype for Listic: Clean Architecture in React.
 
 Link to the video: https://github.com/cooper09/listic-proto
