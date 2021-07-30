@@ -40,10 +40,6 @@ const Sidebar = ({groups, lists, views}) => {
     setModalState(!modalState)
   }
 
-    useEffect(()=>{
-        console.log("App...visibility change: ", modalState)
-    }, [modalState])
-    
     return(
         <Sidebar>
             <h3>Sidebar</h3>
