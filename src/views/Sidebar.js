@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { buttonClicked } from '../application/actions/eventOne';
 import { showTasks, showStocks } from '../application/actions/ui';
 import styled from "styled-components";
@@ -28,8 +28,10 @@ const Sidebar = ({groups, lists, views}) => {
     // Simple Modal to start
 
     const [currentPage, setCurrentPage] = useState("");
+    
     useEffect(()=>{
         console.log("App...current page: ", currentPage )
+        setCurrentPage(currentPage);
     }, [currentPage])
 
  

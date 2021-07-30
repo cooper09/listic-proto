@@ -5,9 +5,6 @@ const Tasks = ({visible}) => {
 
     console.log("Tasks");
 
-    let taskData = [];
-
-
     const Tasks = styled.section`
         padding: 2em;
         background: papayawhip;

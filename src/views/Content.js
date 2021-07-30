@@ -1,13 +1,11 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { putTodo } from '../application/actions/todos';
 import { getCurrentPage } from '../application/selectors/ui';
 
 import  Tasks  from './Tasks.js';
 import  Stocks  from './Stocks.js';
-
 import styled from "styled-components";
-import { render } from '@testing-library/react';
 
 const Content = ({data, newData, userData}) => {
     console.log("Content received data: ", data );
@@ -24,10 +22,11 @@ const Content = ({data, newData, userData}) => {
     let lastName = "";
 
     if (userData) {
-        userData.map(user => {
+        userData.map( user => {
         console.log("Content user: ", user.first );
         firstArr.push(user.first)
-        lastArr.push(user.last)
+        lastArr.push(user.last);
+        return "user data"
         })
     }
 
@@ -67,12 +66,12 @@ const Content = ({data, newData, userData}) => {
         ))}
     </ul>
 
-        { currentPage == "Tasks" &&
+        { currentPage === "Tasks" &&
             <h2>
             <Tasks visible={true} />
             </h2>
         }
-        { currentPage == "Stocks" &&
+        { currentPage === "Stocks" &&
             <h2>
             <Stocks visible={true} />
             </h2>

@@ -13,8 +13,6 @@ import { buttonClicked } from '../application/selectors/eventOne';
 import { getContacts } from '../application/selectors/contacts';
 import { getGroups } from '../application/selectors/groups';
 import { getLists } from '../application/selectors/lists';
-import { getStocks } from '../application/selectors/stocks';
-import { getTasks } from '../application/selectors/tasks';
 import { getViews } from '../application/selectors/views';
 
 import { getCurrentPage } from '../application/selectors/ui';
@@ -38,8 +36,7 @@ export default () => {
     const contacts =  useSelector(getContacts);
     const groups = useSelector(getGroups);
     const lists = useSelector(getLists);
-    const stocks = useSelector(getStocks);
-    const tasks = useSelector(getTasks);
+    
     const views = useSelector(getViews);
 
     //lets start off with the current page
