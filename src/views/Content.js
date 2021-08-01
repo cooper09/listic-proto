@@ -23,7 +23,7 @@ const Content = ({data, newData, userData}) => {
 
     if (userData) {
         userData.map( user => {
-        console.log("Content user: ", user.first );
+        console.log("Content user: ", user.ACL_ids );
         firstArr.push(user.first)
         lastArr.push(user.last);
         return "user data"
