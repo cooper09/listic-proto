@@ -1,1 +1,0 @@
-export const getRestaurants = state => state.restaurants.allRestaurants;

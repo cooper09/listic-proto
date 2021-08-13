@@ -1,1 +1,0 @@
-export const getStocks = state => state.stocks.allStocks;
